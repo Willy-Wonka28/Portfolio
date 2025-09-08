@@ -50,7 +50,7 @@ const Layout = ({ children, activeTab, onTabChange }: LayoutProps) => {
   };
 
   return (
-    <div className="h-[100vh] bg-background flex">
+    <div className="min-h-screen bg-background flex">
       {/* Sidebar - Hidden on mobile */}
       <motion.aside 
         className="hidden md:flex w-64 bg-sidebar border-r border-sidebar-border flex-col"
@@ -136,7 +136,7 @@ const Layout = ({ children, activeTab, onTabChange }: LayoutProps) => {
       </motion.aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 flex flex-col overflow-y-auto">
+  <main className="flex-1 flex flex-col overflow-y-auto">
         {/* Header Box */}
         <motion.header 
           className="p-6 md:p-8 border-b border-content-border bg-content-box"
@@ -164,7 +164,7 @@ const Layout = ({ children, activeTab, onTabChange }: LayoutProps) => {
         </motion.header>
 
         {/* Content Area */}
-        <div className="flex-1 p-6 md:p-8">
+  <div className="flex-1 p-6 md:p-8 break-words overflow-x-auto pb-24 md:pb-8">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}

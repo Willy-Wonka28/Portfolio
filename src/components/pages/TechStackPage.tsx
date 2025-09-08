@@ -6,7 +6,7 @@ const TechStackPage = () => {
     { name: "TypeScript", link: "/lang_icons/typescript.png" },
     { name: "Tailwind", link: "/lang_icons/tailwind.svg" },
     { name: "JavaScript", link: "/lang_icons/js.png" },
-    { name: "Python(FastAPI)", link: "/lang_icons/fastapi.png" },
+    { name: "FastAPI", link: "/lang_icons/fastapi.png" },
     { name: "Nextjs", link: "/lang_icons/next.png" },
     { name: "Supabase", link: "/lang_icons/supabase.png" },
     { name: "Git", link: "/lang_icons/git.png" },
@@ -22,7 +22,7 @@ const TechStackPage = () => {
       {techs.map((tech, index) => (
         <motion.div
           key={tech.name}
-          className="flex items-center gap-3 p-4 bg-secondary rounded-lg hover:bg-hover-accent transition-colors duration-200"
+          className="flex items-center gap-3 p-2 bg-secondary rounded-lg hover:bg-hover-accent transition-colors duration-200"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ 
@@ -34,7 +34,7 @@ const TechStackPage = () => {
           <img 
                 src = {tech.link}
                 className="w-6 h-6 " />
-          <span className="text-secondary-foreground font-medium">{tech.name}</span>
+          <span className="text-secondary-foreground font-medium break-words truncate overflow-hidden max-w-[8rem]">{tech.name}</span>
         </motion.div>
       ))}
     </div>
@@ -59,7 +59,7 @@ const TechStackPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
       >
-        <div className="space-y-8">
+        <div className="space-y-8 h-[30vh] overflow-y-auto">
           {/* Proficient Section */}
           <div>
             <motion.h3 

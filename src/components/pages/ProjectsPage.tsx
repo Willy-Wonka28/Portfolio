@@ -55,7 +55,7 @@ const ProjectsPage = () => {
 
       {/* Box 2: Projects List */}
       <motion.div 
-        className="bg-content-box border border-content-border rounded-lg p-6 shadow-card"
+        className="bg-content-box border border-content-border rounded-lg p-6 shadow-card overflow-auto max-h-[40vh] md:max-h-[35vh]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
