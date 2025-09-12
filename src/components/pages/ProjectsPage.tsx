@@ -5,15 +5,6 @@ const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      logo: "/logos/affinetsales_logo.png",
-      name: "Affinetsales",
-      link: "https://www.affinetsales.com/",
-      description:
-        "Built a full-stack e-learning platform with 50+ users and a 2-tier affiliate system to boost growth. Improved load time through lazy loading and added RBAC for better security. Integrated Paystack and real-time notifications for smooth onboarding.",
-      techStack: ["React", "Typescript", "Supabase", "Tailwind"]
-    },
-    {
-      id: 2,
       logo: "/logos/uninav-logo.svg",
       name: "Uninav",
       link: "https://uninav.live",
@@ -22,7 +13,7 @@ const ProjectsPage = () => {
       techStack: ["React", "TypeScript", "NestJs", "Supabase"]
     },
     {
-      id: 3,
+      id: 2,
       logo: "/logos/direct_logo.png",
       name: "Direct",
       description:
@@ -30,14 +21,23 @@ const ProjectsPage = () => {
       techStack: ["Helius Labs SDK", "Privy", "React", "Socket.io", "Solana Web3js"]
     },
     {
-      id: 4,
+      id: 3,
       logo: "/logos/vaav_logo.png",
       name: "VaaV",
       link: "https://vaav-n.vercel.app/",
       description:
         "Developed a product website with full e-commerce flow, allowing users to place and pay for orders online.",
       techStack: ["ReactJs", "Typescript"]
-    }
+    },
+    {
+      id: 4,
+      logo: "/logos/affinetsales_logo.png",
+      name: "Affinetsales",
+      // link: "https://www.affinetsales.com/", uncomment it later
+      description:
+        "Built a full-stack e-learning platform with 50+ users and a 2-tier affiliate system to boost growth. Improved load time through lazy loading and added RBAC for better security. Integrated Paystack and real-time notifications for smooth onboarding.",
+      techStack: ["React", "Typescript", "Supabase", "Tailwind"]
+    },
 
   ];
 
